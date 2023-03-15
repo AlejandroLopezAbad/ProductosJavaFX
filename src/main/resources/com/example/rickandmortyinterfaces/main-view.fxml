@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<StackPane  maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"   fx:controller="com.example.rickandmortyinterfaces.Controller.MainViewController">
+   <children>
+      <BorderPane prefHeight="200.0" prefWidth="200.0">
+         <center>
+            <StackPane fx:id="stackpaneMain" prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER" styleClass="fondo">
+              <fx:include fx:id="vistaDetalle" source="vista-detalle.fxml" visible="false" />
+              <fx:include fx:id="graficaView" source="grafica-view.fxml" visible="true" />
+              <fx:include fx:id="listView" source="list-view.fxml" visible="false" />
+
+            </StackPane>
+         </center>
+         <bottom>
+            <HBox maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" BorderPane.alignment="CENTER">
+               <children>
+                  <Button fx:id="btodetalle" alignment="CENTER" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%botondetalle" HBox.hgrow="ALWAYS" onAction="#detailView" />
+                  <Button fx:id="btografico" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%botongrafico"  HBox.hgrow="ALWAYS" onAction="#graficaView" />
+                  <Button fx:id="btolista" maxHeight="1.7976931348623157E308" maxWidth="1.7976931348623157E308" mnemonicParsing="false" text="%botonarchivo"  HBox.hgrow="ALWAYS" onAction="#listView" />
+               </children>
+            </HBox>
+         </bottom>
+      </BorderPane>
+   </children>
+</StackPane>
